@@ -21,7 +21,7 @@ I trained both the GRU models and the dense model, and the deepest GRU model (4 
 
 The function this model tries to approximate is the function that sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math under the hood is very similar to the one above, I report below the salient steps. 
 
-**TL;DR**:I use the Bellman equation with gamma = .8 and .85, and the reward being the number of points I win or lose at each hand.
+**TL;DR**:I use the Bellman equation with gamma = .8 and .9, and the reward being the number of points I win or lose at each hand.
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
 
