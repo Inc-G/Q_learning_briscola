@@ -42,7 +42,7 @@ In the folder metrics you can find similar graphs for when the first MLP player 
 
 ### Why estimating points seems better than estimating the probability of winning?
 
-Hard to say. It _might_ be because of how we approximate the weighted sum over the next states with a single next state. It might be that, while the approximation has no bias, it might have bigger variance when the nn approximates the probability of winning rather than the (discounted) sum of points.
+Hard to say. It _might_ be because of how we approximate the weighted sum over the next states with a single next state. It might be that, while both approximations are unbiased, it might be that the one used for approximating the probability of winning has bigger variance.
 
 One advantage of the MLP model is that it is much faster to train :). 
 
