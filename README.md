@@ -79,6 +79,15 @@ Gets next states from a batch of games, and encodes a game for the nn. For encod
 
 Contains simulate_games_and_record_data which simulates a number of games and records the data in a pd.df. It also contains simulate_games which simulates the games without returning a pd.df but the ratio player_2_wins/number_of_simulations.
 
+### MLP_best_model:
+The best model's weights.
+
+### notebooks:
+The notebooks with a sample training loop.
+
+### metrics:
+Some pictures.
+
 
 
 
