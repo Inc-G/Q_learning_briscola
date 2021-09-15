@@ -26,5 +26,5 @@ The function this model tries to approximate is the function that sends a state-
 The advantage is that the goal is very intuitive (i.e. the formula is easier to process than the one of the Bellman equation). The drawback is that... it is worse than the model which estimates the number of points. It might be because, while the random variable we use to approximate the q-function is unbaised, it _might_ have bigger variance than the one used to approximate the weighted sum of the points we will make.
 
 
-![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
+![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Estimate_probability_of_winning.png?raw=true "Optional Title")
 
