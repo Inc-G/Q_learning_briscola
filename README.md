@@ -14,7 +14,7 @@ In the module briscola_players, there are four player classes: random player, de
 
 The (ideal) goal of this project is to have an ai that masters briscola. The actual goal is to have an ai that beats the deterministic player, the random player, and some previous versions of itself as often as possible.
 
-In this project I trained a few models, below are the two most remarkable.
+In this project I trained a few models, below are the two most interesting.
 
 ## Estimate the probability of winning.
 
