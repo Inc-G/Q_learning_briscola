@@ -44,7 +44,7 @@ There are four player classes: random player, deterministic player, human player
 
 **Deep player**: class that plays with a nn.
 
-There are two neural networks, MyModel and MyModel_dense. The first one (with compute_prob_winning = True, simplified = False) is the architecture of the best model I trained to estimate the probability of winning. The second one (with compute_prob_winning = False) is the best architecture of the model I trained to estimate the number of points.
+There are two neural networks, MyModel and MyModel_dense. The first one (with compute_prob_winning = True, simplified = False) is the architecture of the best model I trained to estimate the probability of winning. The second one (with compute_prob_winning = False) is the architecture of the best model I trained to estimate the number of points.
 
 #### environment:
 
