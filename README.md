@@ -1,6 +1,6 @@
 # deep_learning_briscola
 
-Briscola is a classic italian card game. In this repository I train two neural network to play briscola (specifically, to beat two hard-coded briscola players).
+Briscola is a classic italian card game. In this repository I train two neural network to play briscola.
 
 In the module briscola_players, there are four player classes: random player, deterministic player, human player, and deep player.
 
