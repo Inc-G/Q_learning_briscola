@@ -33,9 +33,11 @@ All the models I trained have an average losing rate vs a random player between 
 
 Below there is the window = 10 rolling average of the fraction of games losts for the GRU best player, when playing vs another model previously trained, vs the deterministic "greedy" player and vs the random player.
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20GRU%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
-Below there is the window = 10 rolling average of the fraction of games losts for the MLP best player, when playing vs another model previously trained, vs the deterministic "greedy" player and vs the random player.
+Below there is the window = 10 rolling average of the fraction of games losts for the MLP best player, when playing vs another model previously trained (in this case, the first MLP that beated the GRU player), vs the deterministic "greedy" player and vs the random player.
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20MLP%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
+
+In the folder metrics you can find similar graphs for when the first MLP player beat the GRU player.
 
 
 ## Organization of the repository.
