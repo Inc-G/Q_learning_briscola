@@ -40,6 +40,11 @@ Below there is the window = 10 rolling average of the fraction of games losts fo
 
 In the folder metrics you can find similar graphs for when the first MLP player beated the GRU player.
 
+### Why estimating points seems better than estimating the probability of winning?
+
+Hard to say. It _might_ be because of how we approximate the weighted sum over the next states with a single next state. It might be that, while the approximation has no bias, it might have bigger variance when the nn approximates the probability of winning rather than the (discounted) sum of points.
+
+One advantage of the MLP model is that it is much faster to train :). 
 
 ## Organization of the repository.
 
