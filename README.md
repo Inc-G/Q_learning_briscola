@@ -18,7 +18,12 @@ In this project I trained a few models, below are the two most interesting.
 
 ## Estimate the probability of winning.
 
-The function this model tries to approximate is the probability of winning. The advantage is that the goal is very intuitive (i.e. the formula is easier to process than the one of the Bellman equation). The drawback is that... it is worse than the model which estimates the number of points. It might be because, while the random variable we use to approximate the q-function is unbaised, it _might_ have bigger variance than the one used to approximate the weighted sum of the points we will make.
+The function this model tries to approximate is the function that sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a).
+
+
+
+
+The advantage is that the goal is very intuitive (i.e. the formula is easier to process than the one of the Bellman equation). The drawback is that... it is worse than the model which estimates the number of points. It might be because, while the random variable we use to approximate the q-function is unbaised, it _might_ have bigger variance than the one used to approximate the weighted sum of the points we will make.
 
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
