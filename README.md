@@ -18,7 +18,7 @@ In this project I trained a few models, below are the two most remarkable.
 
 ## Gru model.
 
-This is a model 
+The function this model tries to approximate is the probability of winning. The advantage is that the goal is very intuitive (i.e. the formula is easier to process than the one of the Bellman equation). 
 
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
