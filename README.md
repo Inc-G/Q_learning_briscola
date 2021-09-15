@@ -39,7 +39,7 @@ Below there is the window = 10 rolling average of the fraction of games losts fo
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20MLP%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
 
-In the folder metrics you can find similar graphs for when the first MLP player beat the GRU player.
+In the folder metrics you can find similar graphs for when the first MLP player beated the GRU player.
 
 
 ## Organization of the repository.
