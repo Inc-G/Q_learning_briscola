@@ -90,8 +90,10 @@ Some pictures.
 
 ### Briscola gui:
 
-Play interactively with my MLP best model. To do that you need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. The server-side is in Briscola_app.py,
-the client side is the html page Briscola.html in the folder "templates". You might want to (1) have the model downloaded in the same folder where Briscola_app.py is and (2) if you are on Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html.
+In this folder there is a _very basic_ flask application + html page to play vs the deterministic model, vs the random model, and vs the best MLP model I trained.
+
+Play against my MLP best model! To do that you need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. The server-side is in Briscola_app.py,
+the client-side is the html page Briscola.html in the folder "templates". You might want to (1) have the model downloaded in the same folder where Briscola_app.py is and (2) if you are on Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. The html page can be improved :)
 
 
 
