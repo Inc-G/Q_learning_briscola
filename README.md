@@ -31,7 +31,7 @@ I trained both the GRU models and the dense model, and the dense model outperfor
 ## Results:
 All the models I trained have an average losing rate vs a random player between 80 and 90%, and between the deterministic one between 70 and 80%.
 
-The first model I trained was the GRU model, with the neural network approximating the probability of winning. A few experiments later, I trained a simpler MLP model with the neural network approximating the (discounted) sum of the expected number of points, and this model beated the GRU model above 60% of the times. Then I fine-tuned better the simpler MLP model (gamma = .9 seems the best choice), to get the MLP model in the folder MLP_best_model.
+The first model I trained was the GRU model, with the neural network approximating the probability of winning. A few experiments later, I trained a simpler MLP model with the neural network approximating the (discounted) sum of the expected number of points, and this model beated the GRU model around 60% of the times. Then I fine-tuned better the simpler MLP model (gamma = .9 seems the best choice), to get the MLP model in the folder MLP_best_model.
 
 Below there is the window = 10 rolling average of the fraction of games losts for the GRU best player, when playing vs another model previously trained, vs the deterministic "greedy" player and vs the random player.
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20GRU%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
