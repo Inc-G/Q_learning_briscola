@@ -2,16 +2,6 @@
 
 Briscola is a classic italian card game. If you haven't heard of it, you can think of it as a card game where each card is worth some points, and at each round both you and your opponent play a card. If you win a round, you win the sum of the number of points of the cards played at that round. The goal is to have more points than your opponent by the end of the game. In this repository I train two neural networks to play briscola.
 
-In the module briscola_players, there are four player classes: random player, deterministic player, human player, and deep player.
-
-**Random player**: plays randomly.
-
-**Deterministic player**: This is a _greedy_ player. If it plays first, it plays the card with less points. If it plays second and it can win an hand, it plays the card with less points among those which make it win, if it cannot win it plays the card with less points.
-
-**Human player**: to play on the command line
-
-**Deep player**: class that plays with a nn.
-
 The (ideal) goal of this project is to have an ai that masters briscola. The actual goal is to have an ai that beats the deterministic player, the random player, and some previous versions of itself as often as possible.
 
 In this project I trained a few models, below are the two most interesting.
@@ -37,6 +27,23 @@ The function this model tries to approximate is the function that sends a state-
 
 
 I trained both the GRU models and the dense model, and the dense model outperforms all of them. It also outperforms the best GRU model trained to estimate the probability of winning.
+
+## Organization of the repository.
+
+There are three notebooks and four moules.
+
+### Modules:
+#### briscola_players
+
+In the module briscola_players, there are four player classes: random player, deterministic player, human player, and deep player.
+
+**Random player**: plays randomly.
+
+**Deterministic player**: This is a _greedy_ player. If it plays first, it plays the card with less points. If it plays second and it can win an hand, it plays the card with less points among those which make it win, if it cannot win it plays the card with less points.
+
+**Human player**: to play on the command line
+
+**Deep player**: class that plays with a nn.
 
 
 
