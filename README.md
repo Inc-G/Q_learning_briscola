@@ -8,7 +8,7 @@ In the module briscola_players, there are four player classes: random player, de
 
 **Deterministic player**: This is a _greedy_ player. If it plays first, it plays the card with less points. If it plays second and it can win an hand, it plays the card with less points among those which make it win, if it cannot win it plays the card with less points.
 
-**Human player**: to play on the command line (or in the notebook)
+**Human player**: to play on the command line
 
 **Deep player**: class that plays with a nn.
 
