@@ -25,3 +25,13 @@ The function this model tries to approximate is the function that sends a state-
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Estimate_probability_of_winning.png?raw=true "Optional Title")
 
+I trained both the GRU models and the dense model, and the deepest GRU model (4 GRU layers) outperforms all of them.
+
+## Estimate the number of points.
+
+The function this model tries to approximate is the function that sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math is very similar to the one above, so I won't report it here. I use the Bellman equation with gamma = .8 and .85, and the reward being the number of points I win or lose at each hand.
+
+I trained both the GRU models and the dense model, and the dense model outperforms all of them. It also outperforms the best GRU model trained to estimate the probability of winning.
+
+
+
