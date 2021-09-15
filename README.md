@@ -12,7 +12,13 @@ In the module briscola_players, there are four player classes: random player, de
 
 **Deep player**: class that plays with a nn.
 
-The (ideal) goal of this project is to have an ai that masters briscola. The actual goal is to have an ai that beats the deterministic player, the random player, and some previous versions of itself as often as possible. 
+The (ideal) goal of this project is to have an ai that masters briscola. The actual goal is to have an ai that beats the deterministic player, the random player, and some previous versions of itself as often as possible.
+
+In this project I trained a few models, below are the two most remarkable.
+
+## Gru model.
+
+This is a model 
 
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
