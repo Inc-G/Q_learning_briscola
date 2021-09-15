@@ -15,7 +15,7 @@ The function this model tries to approximate is the function that sends a state-
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Estimate_probability_of_winning.png?raw=true "Optional Title")
 
-I trained both the GRU models and the dense model, and the deepest GRU model (4 GRU layers) outperforms all of them.
+I trained both the GRU models and the dense model, and the deepest GRU model (4 GRU layers + dense layer) outperforms all of them.
 
 ## Estimate the number of points.
 
@@ -26,7 +26,7 @@ The function this model tries to approximate is the function that sends a state-
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
 
 
-I trained both the GRU models and the dense model, and the dense model outperforms all of them. It also outperforms the best GRU model trained to estimate the probability of winning.
+I trained both the GRU models and the dense model, and the dense model (3 dense layers with activation tanh) outperforms all of them. 
 
 ## Results:
 All the models I trained have an average losing rate vs a random player between 80 and 90%, and between the deterministic one between 70 and 80%.
