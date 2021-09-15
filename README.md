@@ -33,9 +33,8 @@ I trained both the GRU models and the dense model, and the dense model outperfor
 There are three notebooks and four moules.
 
 ### Modules:
-#### briscola_players
-
-In the module briscola_players, there are four player classes: random player, deterministic player, human player, and deep player.
+#### briscola_players: 
+There are four player classes: random player, deterministic player, human player, and deep player.
 
 **Random player**: plays randomly.
 
@@ -44,6 +43,20 @@ In the module briscola_players, there are four player classes: random player, de
 **Human player**: to play on the command line
 
 **Deep player**: class that plays with a nn.
+
+There are two neural networks, MyModel and MyModel_dense. The first one (with compute_prob_winning = True, simplified = False) is the architecture of the best model I trained to estimate the probability of winning. The second one (with compute_prob_winning = False) is the best architecture of the model I trained to estimate the number of points.
+
+#### environment:
+
+Contains the environment (i.e. briscola).
+
+#### model_nest_states:
+Gets next states from a batch of games, and encodes a game for the nn. For encoding a game, each card (including when I have no card) is encoded as a OH vector.
+
+#### simulate_games:
+
+Contains simulate_games_and_record_data which simulates a number of games and records the data in a pd.df. It also contains simulate_games which simulates the games without returning a pd.df but the ratio player_2_wins/number_of_simulations.
+
 
 
 
