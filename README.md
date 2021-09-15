@@ -55,27 +55,27 @@ Probably longer training will lead to better results (in the graph above, the ML
 There are three notebooks and four moules.
 
 ### Modules:
-#### briscola_players: 
+**#### briscola_players: **
 There are four player classes: random player, deterministic player, human player, and deep player.
 
-**Random player**: plays randomly.
+_Random player_: plays randomly.
 
-**Deterministic player**: This is a _greedy_ player. If it plays first, it plays the card with less points. If it plays second and it can win an hand, it plays the card with less points among those which make it win, if it cannot win it plays the card with less points.
+_Deterministic player_: This is a _greedy_ player. If it plays first, it plays the card with less points. If it plays second and it can win an hand, it plays the card with less points among those which make it win, if it cannot win it plays the card with less points.
 
-**Human player**: to play on the command line
+_Human player_: to play on the command line
 
-**Deep player**: class that plays with a nn.
+_Deep player_: class that plays with a nn.
 
 There are two neural networks, MyModel and MyModel_dense. The first one (with compute_prob_winning = True, simplified = False) is the architecture of the best model I trained to estimate the probability of winning. The second one (with compute_prob_winning = False) is the architecture of the best model I trained to estimate the number of points.
 
-#### environment:
+**#### environment:**
 
 Contains the environment (i.e. briscola).
 
-#### model_nest_states:
+**#### model_nest_states:**
 Gets next states from a batch of games, and encodes a game for the nn. For encoding a game, each card (including when I have no card) is encoded as a OH vector.
 
-#### simulate_games:
+**#### simulate_games:**
 
 Contains simulate_games_and_record_data which simulates a number of games and records the data in a pd.df. It also contains simulate_games which simulates the games without returning a pd.df but the ratio player_2_wins/number_of_simulations.
 
