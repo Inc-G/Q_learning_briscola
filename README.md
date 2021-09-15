@@ -46,6 +46,10 @@ Hard to say. It _might_ be because of how we approximate the weighted sum over t
 
 One advantage of the MLP model is that it is much faster to train :). 
 
+### Further (possible) improvements.
+
+Probably longer training will lead to better results (in the graph above, the MLP model seems to be slowly improving). I suspect that a fine-tuning of the GRU model would outperform the MLP model (training the GRU model takes much longer).
+
 ## Organization of the repository.
 
 There are three notebooks and four moules.
