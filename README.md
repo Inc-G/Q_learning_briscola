@@ -28,6 +28,16 @@ The function this model tries to approximate is the function that sends a state-
 
 I trained both the GRU models and the dense model, and the dense model outperforms all of them. It also outperforms the best GRU model trained to estimate the probability of winning.
 
+## Results:
+All the models I trained have an average losing rate vs a random player between 80 and 90%, and between the deterministic one between 70 and 80%.
+
+Below there is the window = 10 rolling average of the fraction of games losts for the GRU best player, when playing vs another model previously trained, vs the deterministic "greedy" player and vs the random player.
+![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20GRU%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
+Below there is the window = 10 rolling average of the fraction of games losts for the MLP best player, when playing vs another model previously trained, vs the deterministic "greedy" player and vs the random player.
+
+![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20MLP%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
+
+
 ## Organization of the repository.
 
 There are three notebooks and four moules.
