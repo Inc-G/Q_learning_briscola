@@ -10,7 +10,7 @@ In this project I trained a few models, below are the two most interesting.
 
 The function the neural network tries to approximate is the function that sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
 
-**TL;DR**: I use the Bellman equation with gamma = 1 and the reward 0 unless I win (in which case it is 1), or it is the last hand and it's a draw (in which case it is 1/2).
+**TL;DR**: I use the Bellman equation with gamma = 1 and the reward 0 unless I won the game (in which case it is 1), or it is the last hand and it's a draw (in which case it is 1/2).
 
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Estimate_probability_of_winning.png?raw=true "Optional Title")
