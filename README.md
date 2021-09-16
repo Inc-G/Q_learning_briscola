@@ -41,7 +41,7 @@ In the folder metrics you can find similar graphs for when the first MLP player 
 
 ### Further (possible) improvements:
 
-Probably longer training will lead to better results (in the graph above, it looks like the MLP model is still _slowly_ improving). I suspect that a fine-tuning of the GRU model would outperform the MLP model (however, training and consequently hyperparameters tuning, for the GRU model takes much longer).
+Probably longer training will lead to better results (in the graph above, it looks like the MLP model is still _slowly_ improving). I suspect that a fine-tuning of the GRU model would outperform the MLP model (however, training and consequently hyperparameters tuning  takes much longer for the GRU model).
 
 One could try different reinforcement learning algorithms (actor-critic?).
 
