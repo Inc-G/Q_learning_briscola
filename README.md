@@ -8,7 +8,7 @@ In this project I trained a few models, below are the two most interesting.
 
 ## Estimate the probability of winning:
 
-The function this model tries to approximate is the function that sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
+The function the neural network tries to approximate is the function that sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
 
 **TL;DR**: I use the Bellman equation with gamma = 1 and the reward being 1 if I win, 0 if I lose, 1/2 if it's a draw.
 
@@ -19,7 +19,7 @@ I trained both the GRU models and the dense model, and the deepest GRU model (4 
 
 ## Estimate the number of points:
 
-The function this model tries to approximate is the function that sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math under the hood is very similar to the one above, I report below the salient steps. 
+The function the neural network tries to approximate is the function that sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math under the hood is very similar to the one above, I report below the salient steps. 
 
 **TL;DR**:I use the Bellman equation with gamma = .8 and .9, and the reward being the number of points I win or lose at each hand.
 
