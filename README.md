@@ -50,6 +50,8 @@ One advantage of the MLP model is that it is much faster to train :).
 
 Probably longer training will lead to better results (in the graph above, it looks like the MLP model is still _slowly_ improving). I suspect that a fine-tuning of the GRU model would outperform the MLP model (however, training for the GRU model takes much longer).
 
+One could try more advanced reinforcement learning algorithms (actor-critic?).
+
 ## Organization of the repository.
 
 There are three notebooks and four moules.
