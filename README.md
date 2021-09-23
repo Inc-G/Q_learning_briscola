@@ -88,7 +88,7 @@ Some pictures.
 In this folder there is a _very basic_ flask application + html page to play on your browser vs the deterministic model, vs the random model, and vs the best MLP model I trained.
 
 To play, you need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. The server-side is in Briscola_app.py,
-the client-side is the html page Briscola.html in the folder "templates". You might want to (1) have the model weights and the modules briscola_players.py and environment.py in the same folder where Briscola_app.py is and (2) if you are on Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. A sample of the html page is below (the ui can be improved :)) 
+the client-side is the html page Briscola.html in the folder "templates". You might want to (1) have the model weights and the modules briscola_players.py and environment.py in the same folder where Briscola_app.py is and (2) if you use Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. A sample of the html page is below (the ui can be improved :)) 
 
 
 
