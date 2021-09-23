@@ -67,7 +67,7 @@ There are two neural networks, MyModel and MyModel_dense. The first one (with co
 
 Contains the environment (i.e. briscola).
 
-#### model_nest_states:
+#### model_next_states:
 Gets next states from a batch of games, and encodes a game for the nn. For encoding a game, each card (including when I have no card) is encoded as a OH vector.
 
 #### simulate_games:
