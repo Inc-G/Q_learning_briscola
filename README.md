@@ -2,7 +2,7 @@
 
 [Briscola](https://en.wikipedia.org/wiki/Briscola) is a classic italian card game. You play with 40 cards and each card is worth some points. At each round both you and your opponent play a card. If you win a round, you win the sum of the points of the cards played at that round. The goal is to have more points than your opponent by the end of the game. In this repository I train two neural networks to play briscola.
 
-The (ideal) goal is to have an ai that masters briscola. The actual goal is to have an ai that beats the deterministic player, the random player, and some previous versions of itself as often as possible.
+The (ideal) goal is to have an ai that masters briscola. The actual goal is to have an ai that beats two hard-coded players (the deterministic player and the random player), and some previous versions of itself as often as possible.
 
 In this project I trained a few models, below are the two most interesting.
 
