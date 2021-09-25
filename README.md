@@ -4,13 +4,13 @@
 
 The (ideal) goal is to have an ai that masters briscola. The actual goal is to have an ai that beats two hard-coded players (the deterministic player and the random player), and some previous versions of itself as often as possible.
 
-In this project I trained a few models, below are the two most interesting.
+I trained a few neural networks with Q-learning, below are the two most interesting.
 
 ## Estimate the probability of winning:
 
-The function the neural network tries to approximate sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
+The Q-function the neural network tries to approximate sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
 
-**TL;DR**: I use the Bellman equation with gamma = 1 and the reward 0 unless I won the game (in which case it is 1), or it is the last hand and it's a draw (in which case it is 1/2).
+**TL;DR**: Q-learning with gamma = 1 and the reward 0 unless I won the game (in which case it is 1), or it is the last hand and it's a draw (in which case it is 1/2).
 
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Estimate_probability_of_winning.png?raw=true "Optional Title")
@@ -21,7 +21,7 @@ I trained both a GRU models and a MLP model, and the deepest GRU model (4 GRU la
 
 The function the neural network tries to approximate sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math under the hood is very similar to the one above, I report below the salient steps. 
 
-**TL;DR**:I use the Bellman equation with gamma = .8 and .9, and the reward being the number of points I win or lose at each hand.
+**TL;DR**: Q-learning with gamma = .8 and .9, and the reward being the number of points I win or lose at each hand.
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
 
