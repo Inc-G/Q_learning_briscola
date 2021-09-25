@@ -32,9 +32,9 @@ All the models I trained have an average winning rate vs a random player between
 
 The first model I trained was the GRU model, with the neural network approximating the probability of winning. After I trained a simpler MLP model with the neural network approximating the (discounted) sum of the expected number of points, and this model beated the previously trained GRU model around 60% of the times. Then I fine-tuned better the simpler MLP model (gamma = .9 seems the best choice), to get the MLP model in the folder MLP_best_model.
 
-Below there is the window = 10 rolling average of the fraction of games losts for the GRU best player, when playing vs another model previously trained, vs the deterministic "greedy" player and vs the random player. The results below are after 58K steps of gradient descent.
+Below there is the window = 10 rolling average of the fraction of games losts during training, for the GRU best player. It was playing vs another model previously trained (in green), vs the deterministic "greedy" player (orange) and vs the random player (blue). The results below are after 58K steps of gradient descent.
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20GRU%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
-Below there is the window = 10 rolling average of the fraction of games losts for the MLP best player, when playing vs another model previously trained (in this case, the first MLP that beated the GRU player), vs the deterministic "greedy" player and vs the random player. The results below are after 75K steps of gradient descent.
+Below there is the window = 10 rolling average of the fraction of games losts during training, for the MLP best player. It was playing vs another model previously trained (in green, in this case, the first MLP that beated the GRU player), vs the deterministic "greedy" player (orange) and vs the random player (blue). The results below are after 75K steps of gradient descent.
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/metrics/Final%20MLP%20-%20rolling%20lost%20games.png?raw=true "Optional Title")
 
 In the folder metrics you can find similar graphs for when the first MLP player beated the GRU player.
