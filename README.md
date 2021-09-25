@@ -15,7 +15,7 @@ The Q-function the neural network tries to approximate sends a state-action pair
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Estimate_probability_of_winning.png?raw=true "Optional Title")
 
-I trained both a GRU models and a MLP model, and the deepest GRU model (4 GRU layers + dense layer) outperforms all of them.
+I trained both a GRU model and a MLP model, and the deepest GRU model (4 GRU layers + dense layer) outperforms all of them.
 
 ## Estimate the number of points:
 
@@ -25,7 +25,7 @@ The function the neural network tries to approximate sends a state-action pair (
 
 ![Alt text](https://github.com/Inc-G/deep_learning_briscola/blob/main/Bellman_eq.png?raw=true "Optional Title")
 
-I trained both a GRU models and a MLP model, and the dense model (3 dense layers with activation tanh) outperforms all of them. 
+I trained both a GRU model and a MLP model, and the dense model (3 dense layers with activation tanh) outperforms all of them. 
 
 ## Results:
 All the models I trained have an average winning rate vs a random player between 80 and 90%, and vs the deterministic "greedy" player between 70 and 80%.
