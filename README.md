@@ -8,7 +8,7 @@ I trained a few neural networks with Q-learning, below are the two most interest
 
 ## Estimate the probability of winning:
 
-The Q-function the neural network tries to approximate sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
+The Q-function the neural network approximates the function that sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
 
 **TL;DR**: this is Q-learning with gamma = 1 and the reward 0 unless I won the game (in which case it is 1), or it is the last hand and it's a draw (in which case it is 1/2).
 
@@ -19,7 +19,7 @@ I trained both a GRU model and a MLP model, and the deepest GRU model (4 GRU lay
 
 ## Estimate the number of points:
 
-The function the neural network tries to approximate sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math under the hood is very similar to the one above, I report below the salient steps. 
+The function the neural network approximates the function that sends a state-action pair (s,a) to the expectation of the discounted sum of the number of points I make. The math under the hood is very similar to the one above, I report below the salient steps. 
 
 **TL;DR**: this is Q-learning with gamma = .8 and .9, and the reward being the number of points I win or lose at each hand.
 
