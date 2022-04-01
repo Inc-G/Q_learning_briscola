@@ -45,7 +45,7 @@ Probably longer training will lead to better results (in the graph above, it loo
 
 One could try different reinforcement learning algorithms (actor-critic?).
 
-## Organization of the repository.
+## Training directory
 
 The training directory contains stuff used to train the neural network.
 
@@ -83,7 +83,7 @@ The notebooks with a sample training loop.
 ### metrics:
 Some pictures.
 
-## Usage:
+## Usage
 
 Navigate to the folder Briscola gui and run Briscola_app.py. You need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. if you use Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. 
 
