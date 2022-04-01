@@ -47,7 +47,7 @@ One could try different reinforcement learning algorithms (actor-critic?).
 
 ## Organization of the repository.
 
-There are three notebooks and four moules.
+The training directory contains stuff used to train the neural network.
 
 ### Modules:
 #### briscola_players: 
@@ -83,13 +83,11 @@ The notebooks with a sample training loop.
 ### metrics:
 Some pictures.
 
-### Briscola gui:
+## Usage:
 
-In this folder there is a _very basic_ flask application + html page to play on your browser vs the deterministic model, vs the random model, and vs the best MLP model I trained.
+Navigate to the folder Briscola gui and run Briscola_app.py. You need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. if you use Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. 
 
-To play, you need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. The server-side is in Briscola_app.py,
-the client-side is the html page Briscola.html in the folder "templates". You might want to (1) have the model weights and the modules briscola_players.py and environment.py in the same folder where Briscola_app.py is and (2) if you use Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. A sample of the html page is below (the ui can be improved :)) 
-
+In Briscola gui there is a _very basic_ flask application + html page to play on your browser vs the deterministic model, vs the random model, and vs the best MLP model I trained. The server-side is in Briscola_app.py, the client-side is the html page Briscola.html in the folder "templates". A sample of the html page is below (the ui can be improved :)) 
 
 
 
