@@ -6,6 +6,14 @@ The (ideal) goal is to have an ai that masters briscola. The actual goal is to h
 
 I trained a few neural networks with Q-learning, below are the two most interesting.
 
+## Usage
+
+Navigate to the folder Briscola gui and run Briscola_app.py. You need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. if you use Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. 
+
+In Briscola gui there is a _very basic_ flask application + html page to play on your browser vs the deterministic model, vs the random model, and vs the best MLP model I trained. The server-side is in Briscola_app.py, the client-side is the html page Briscola.html in the folder "templates". A sample of the html page is below (the ui can be improved :)) 
+
+https://user-images.githubusercontent.com/55004390/133670961-268abb62-799f-4081-a4a4-7ba87d941f18.mp4
+
 ## Estimate the probability of winning:
 
 The Q-function the neural network approximates the function that sends a state-action pair (s,a) to the probability of winning if at state s we perform action a (i.e. if we play card a). Below there is what math happens under the hood.
@@ -83,14 +91,6 @@ The notebooks with a sample training loop.
 ### metrics:
 Some pictures.
 
-## Usage
 
-Navigate to the folder Briscola gui and run Briscola_app.py. You need Flask 2.0.1, tensorflow >= 2.4.0, numpy, pandas, scikit-learn. if you use Windows you might need to change the localhost address from 0.0.0.0 to 127.0.0.1 in Briscola.html. 
-
-In Briscola gui there is a _very basic_ flask application + html page to play on your browser vs the deterministic model, vs the random model, and vs the best MLP model I trained. The server-side is in Briscola_app.py, the client-side is the html page Briscola.html in the folder "templates". A sample of the html page is below (the ui can be improved :)) 
-
-
-
-https://user-images.githubusercontent.com/55004390/133670961-268abb62-799f-4081-a4a4-7ba87d941f18.mp4
 
 
