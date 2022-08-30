@@ -6,13 +6,14 @@ import pandas as pd
 import tensorflow as tf
 import time
 
+from sklearn.preprocessing import MultiLabelBinarizer
+
 semi = ['bastoni', 'coppe', 'denari', 'spade']
 numeri = ['2', '3', '4', '5', '6', '7', '8', '9', '0', '1']
 
 all_cards_in_strings = [i + j for i in numeri for j in semi]
 all_cards_in_strings.append('None')
 sorted_cards_in_string = sorted(all_cards_in_strings)
-from sklearn.preprocessing import MultiLabelBinarizer
 mlb = MultiLabelBinarizer(classes = sorted_cards_in_string)
 
 
